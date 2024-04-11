@@ -31,7 +31,7 @@ body {
   align-items: center;
   background: #576f35;
   height: 777px;
-  background-image: url(/images/hero/hero-mob.jpg);
+  background-image: url(../images/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 375px 370px;
@@ -41,7 +41,7 @@ body {
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url(/images/hero/hero-mob-2x.jpg);
+      background-image: url(../images/hero/hero-mob-2x.jpg);
     }
   }
 
