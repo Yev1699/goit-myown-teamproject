@@ -14,7 +14,6 @@ body {
   margin: 0;
   padding-top: 48px;
   padding-bottom: 20px;
-  max-width: 335px;
 }
 .hero-text {
   font-weight: 500;
@@ -23,7 +22,6 @@ body {
   color: #fbfbfb;
   padding-bottom: 40px;
   margin: 0;
-  max-width: 335px;
 }
 .hero {
   display: flex;
@@ -38,16 +36,78 @@ body {
 }
 
 @media (min-width: 320px) {
+  .hero-content {
+    padding: 0 20px;
+    width: 335px;
+  }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
       background-image: url(../images/hero/hero-mob-2x.jpg);
     }
   }
-
-  .hero {
-    padding: 0 20px;
-  }
 }
 @media (min-width: 375px) {
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 1024px;
+    background-image: url(../images/hero/hero-tab.jpg);
+    background-size: 768px 539px;
+  }
+
+  .hero-content {
+    padding: 0 32px;
+    width: 704px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: auto;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/hero-tab-2x.jpg);
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    display: block;
+    height: 800px;
+    background-image: url(../images/hero/hero-desktop.jpg);
+    background-size: 650px 800px;
+    background-position: right;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 154px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    width: 502px;
+  }
+  .hero-title {
+    padding-bottom: 124px;
+  }
+  .hero-text {
+    width: 475px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/hero-desktop-2x.jpg);
+    }
+  }
 }
